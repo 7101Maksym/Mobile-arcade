@@ -618,7 +618,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  velocity: 9
+  velocity: 5
 --- !u!1 &783147791 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9025608091174405513, guid: 618308348562390458c768fd51675fd2, type: 3}
