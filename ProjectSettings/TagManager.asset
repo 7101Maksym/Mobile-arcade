@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - House
+  - Buttons
+  - GunImage
   layers:
   - Default
   - TransparentFX
@@ -16,7 +18,7 @@ TagManager:
   - Screen
   - ObstaclesForEnemys
   - Enemys
-  - 
+  - OnlyScreen
   - 
   - 
   - 
@@ -53,4 +55,7 @@ TagManager:
     locked: 0
   - name: Turret
     uniqueID: 3537331509
+    locked: 0
+  - name: Effects
+    uniqueID: 1993873917
     locked: 0

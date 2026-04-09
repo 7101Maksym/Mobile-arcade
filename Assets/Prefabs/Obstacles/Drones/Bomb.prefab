@@ -77,6 +77,8 @@ MonoBehaviour:
   _backBorder: 5
   _topBorder: 0
   _bottomBorder: 0
+  _frontBorder: 0
+  _useFrontBorder: 0
 --- !u!1 &3612217735046964388
 GameObject:
   m_ObjectHideFlags: 0
@@ -87,6 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 633423561845733985}
   - component: {fileID: 8405178894133441249}
+  - component: {fileID: 5066762181723206376}
   m_Layer: 6
   m_Name: Collider
   m_TagString: Untagged
@@ -144,6 +147,32 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.3
+--- !u!114 &5066762181723206376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3612217735046964388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0831197917d1cc841860e33ab868e734, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _root: {fileID: 3065416106911059772}
+  _godMode: 0
+  _damageble: 0
+  _bullet: 1
+  _damage: 5
+  _explosionAnimation: {fileID: 7400000, guid: b8fa4b0858fc2ea43affa43bed8543f4, type: 2}
+  _explosionAnimationScale: 2
+  _renderer: {fileID: 7216461272147200327}
+  _currentHealths: 20
+  _maxHealths: 20
+  _hasShield: 0
+  _currentShield: 10
+  _maxShield: 10
+  _recoveringShield: 1
 --- !u!1 &5325052356993500388
 GameObject:
   m_ObjectHideFlags: 0

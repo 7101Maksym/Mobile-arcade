@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7448381678454028602}
   - component: {fileID: 3950346464041692634}
   - component: {fileID: 5333163109199446695}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: NormalBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,6 +92,8 @@ MonoBehaviour:
   _backBorder: 0.5
   _topBorder: 0
   _bottomBorder: 0
+  _frontBorder: 0
+  _useFrontBorder: 0
 --- !u!1 &6932226966851893886
 GameObject:
   m_ObjectHideFlags: 0
@@ -102,7 +104,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3560710915283760857}
   - component: {fileID: 5302819657018950993}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -165,7 +167,7 @@ SpriteRenderer:
   m_SortingLayerID: -1955759381
   m_SortingLayer: 3
   m_SortingOrder: 5
-  m_Sprite: {fileID: 492443865, guid: db697506d75018344bac20e6dc59339a, type: 3}
+  m_Sprite: {fileID: -797282781, guid: 73541190befceae47af902e18dcdd1c0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -186,7 +188,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6620661834325142526}
   - component: {fileID: 6869590629537559054}
-  m_Layer: 0
+  - component: {fileID: 6581173598918245154}
+  m_Layer: 6
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -243,3 +246,30 @@ CapsuleCollider2D:
   m_Offset: {x: -0.010399416, y: 0.000053331256}
   m_Size: {x: 0.059237823, y: 0.12151261}
   m_Direction: 0
+--- !u!114 &6581173598918245154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8583803848996548026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0831197917d1cc841860e33ab868e734, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _root: {fileID: 4753406750746076038}
+  _godMode: 0
+  _damageble: 0
+  _bullet: 1
+  _damage: 2
+  _explosionAnimation: {fileID: 7400000, guid: 9d7bebed6c4ffc24aae0118382c1cb42, type: 2}
+  _explosionAnimationScale: 1
+  _explosionColor: {r: 0.81218004, g: 0, b: 1, a: 1}
+  _renderer: {fileID: 5302819657018950993}
+  _currentHealths: 20
+  _maxHealths: 20
+  _hasShield: 0
+  _currentShield: 10
+  _maxShield: 10
+  _recoveringShield: 1

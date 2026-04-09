@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8503240932016330254}
   - component: {fileID: 994571629381985141}
-  m_Layer: 6
+  - component: {fileID: 2032583702934357271}
+  m_Layer: 9
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67,6 +68,32 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &2032583702934357271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2466121922227916637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0831197917d1cc841860e33ab868e734, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _root: {fileID: 5010820436513851359}
+  _godMode: 0
+  _damageble: 1
+  _bullet: 0
+  _damage: 15
+  _explosionAnimation: {fileID: 7400000, guid: 495d123e58c0fbe4aa1053cd79f21af1, type: 2}
+  _explosionAnimationScale: 1
+  _renderer: {fileID: 261583872723412501}
+  _currentHealths: 7
+  _maxHealths: 7
+  _hasShield: 0
+  _currentShield: 10
+  _maxShield: 10
+  _recoveringShield: 1
 --- !u!1 &5010820436513851359
 GameObject:
   m_ObjectHideFlags: 0
@@ -79,7 +106,7 @@ GameObject:
   - component: {fileID: 6781770654804051667}
   - component: {fileID: 4898796201335111183}
   - component: {fileID: -2980232493541123085}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: Rammer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -157,6 +184,8 @@ MonoBehaviour:
   _backBorder: 1
   _topBorder: 0
   _bottomBorder: 0
+  _frontBorder: 0
+  _useFrontBorder: 0
 --- !u!1 &5047018676791944837
 GameObject:
   m_ObjectHideFlags: 0
@@ -168,7 +197,7 @@ GameObject:
   - component: {fileID: 4986189290382286155}
   - component: {fileID: 2722853908182820883}
   - component: {fileID: 261583872723412501}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: Renderer
   m_TagString: Untagged
   m_Icon: {fileID: 0}

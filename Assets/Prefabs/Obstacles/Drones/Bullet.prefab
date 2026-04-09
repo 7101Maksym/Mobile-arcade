@@ -91,6 +91,8 @@ MonoBehaviour:
   _backBorder: 0.5
   _topBorder: 0
   _bottomBorder: 0
+  _frontBorder: 0
+  _useFrontBorder: 0
 --- !u!1 &3429196282788482601
 GameObject:
   m_ObjectHideFlags: 0
@@ -164,12 +166,12 @@ SpriteRenderer:
   m_SortingLayerID: 2123684569
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2064397363, guid: 21d1c44a1dd0b0845b64fa96e62690d2, type: 3}
+  m_Sprite: {fileID: -1884053113, guid: 21c5dc267c3d665458d0a56524b9f11b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.5, y: 0.5}
+  m_Size: {x: 0.16, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -185,6 +187,7 @@ GameObject:
   m_Component:
   - component: {fileID: 841650262855903203}
   - component: {fileID: 2888694080294086372}
+  - component: {fileID: 8870017351972346545}
   m_Layer: 6
   m_Name: Collider
   m_TagString: Untagged
@@ -252,3 +255,30 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.35107687, y: 0.16532609}
   m_EdgeRadius: 0
+--- !u!114 &8870017351972346545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4825443144241085149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0831197917d1cc841860e33ab868e734, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _root: {fileID: 2106769912190185685}
+  _godMode: 0
+  _damageble: 0
+  _bullet: 1
+  _damage: 7
+  _explosionAnimation: {fileID: 7400000, guid: 9d7bebed6c4ffc24aae0118382c1cb42, type: 2}
+  _explosionAnimationScale: 1
+  _explosionColor: {r: 1, g: 0, b: 0, a: 1}
+  _renderer: {fileID: 4245583974837962538}
+  _currentHealths: 20
+  _maxHealths: 20
+  _hasShield: 0
+  _currentShield: 10
+  _maxShield: 10
+  _recoveringShield: 1

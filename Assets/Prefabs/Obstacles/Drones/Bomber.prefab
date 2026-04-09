@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4617175551164899404}
   - component: {fileID: 7857789284551437064}
   - component: {fileID: 5750940317427642890}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: Bomber
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,6 +93,8 @@ MonoBehaviour:
   _backBorder: 5
   _topBorder: 0
   _bottomBorder: 0
+  _frontBorder: 0
+  _useFrontBorder: 0
 --- !u!1 &857749889148580704
 GameObject:
   m_ObjectHideFlags: 0
@@ -104,7 +106,7 @@ GameObject:
   - component: {fileID: 4812228442016331362}
   - component: {fileID: 1766561117433460502}
   - component: {fileID: 1310463161709935200}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: Renderer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -209,7 +211,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3477972377715285446}
   - component: {fileID: 7714111121416859807}
-  m_Layer: 6
+  - component: {fileID: 6744282536366758851}
+  m_Layer: 9
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -266,6 +269,32 @@ CapsuleCollider2D:
   m_Offset: {x: -0.06940266, y: 0.012250182}
   m_Size: {x: 0.3611889, y: 2.3635464}
   m_Direction: 0
+--- !u!114 &6744282536366758851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3550730529842168031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0831197917d1cc841860e33ab868e734, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _root: {fileID: 147820287205922213}
+  _godMode: 0
+  _damageble: 1
+  _bullet: 0
+  _damage: 10
+  _explosionAnimation: {fileID: 7400000, guid: 495d123e58c0fbe4aa1053cd79f21af1, type: 2}
+  _explosionAnimationScale: 1
+  _renderer: {fileID: 1310463161709935200}
+  _currentHealths: 15
+  _maxHealths: 15
+  _hasShield: 0
+  _currentShield: 10
+  _maxShield: 10
+  _recoveringShield: 1
 --- !u!1 &8757330719168279688
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,7 +304,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8271547045882705124}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: GeneratePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}

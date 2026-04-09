@@ -176,6 +176,8 @@ MonoBehaviour:
   _backBorder: 2
   _topBorder: 0
   _bottomBorder: 0
+  _frontBorder: 0
+  _useFrontBorder: 0
 --- !u!1 &7852259900930945565
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,6 +219,7 @@ GameObject:
   m_Component:
   - component: {fileID: 455952353938000475}
   - component: {fileID: 6288868872370941066}
+  - component: {fileID: 9183722630526318695}
   m_Layer: 6
   m_Name: Collider
   m_TagString: Untagged
@@ -298,3 +301,27 @@ PolygonCollider2D:
       - {x: 0.37448695, y: -0.058587365}
       - {x: 0.31019014, y: -0.057925448}
   m_UseDelaunayMesh: 0
+--- !u!114 &9183722630526318695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8226298785618298928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0831197917d1cc841860e33ab868e734, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _root: {fileID: 0}
+  _godMode: 0
+  _damageble: 0
+  _bullet: 0
+  _damage: 20
+  _explosionAnimation: {fileID: 0}
+  _currentHealths: 20
+  _maxHealths: 20
+  _hasShield: 0
+  _currentShield: 10
+  _maxShield: 10
+  _recoveringShield: 1

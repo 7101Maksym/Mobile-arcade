@@ -7,6 +7,8 @@ public class ObstacleDestroyer : MonoBehaviour
     [SerializeField] private float _backBorder;
     [SerializeField] private float _topBorder;
     [SerializeField] private float _bottomBorder;
+    [SerializeField] private float _frontBorder;
+    [SerializeField] private bool _useFrontBorder = false;
 
     private Rigidbody2D _rb;
 
@@ -17,11 +19,12 @@ public class ObstacleDestroyer : MonoBehaviour
         _backBorder = Camera.main.ScreenToWorldPoint(Vector2.zero).x - _backBorder;
         _bottomBorder = Camera.main.ScreenToWorldPoint(Vector2.zero).y - _bottomBorder;
         _topBorder = Camera.main.ScreenToWorldPoint(new Vector2(0, Screen.height)).y + _topBorder;
+        _frontBorder = Camera.main.ScreenToWorldPoint(new Vector2(Screen.width, 0)).x + _frontBorder;
     }
 
     private void FixedUpdate()
     {
-        if (_rb.position.x < _backBorder || _rb.position.y > _topBorder || _rb.position.y < _bottomBorder)
+        if (_rb.position.x < _backBorder || _rb.position.y > _topBorder || _rb.position.y < _bottomBorder || (_rb.position.x > _frontBorder && _useFrontBorder))
         {
             Destroy(gameObject);
         }

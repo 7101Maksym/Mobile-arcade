@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1437380367009772574}
   - component: {fileID: 8696101120889089955}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 5199174613000289781}
   - component: {fileID: 5943409037133419079}
   - component: {fileID: -7266175881425428594}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: Drone 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,6 +177,8 @@ MonoBehaviour:
   _backBorder: 1
   _topBorder: 1
   _bottomBorder: 1
+  _frontBorder: 0
+  _useFrontBorder: 0
 --- !u!1 &2288964795118921678
 GameObject:
   m_ObjectHideFlags: 0
@@ -187,7 +189,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5717049417791107102}
   - component: {fileID: 8529131865535701183}
-  m_Layer: 6
+  - component: {fileID: 8783822943791099055}
+  m_Layer: 9
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -244,6 +247,32 @@ CapsuleCollider2D:
   m_Offset: {x: 0.21906391, y: -0.0011457218}
   m_Size: {x: 0.24740066, y: 0.8154293}
   m_Direction: 0
+--- !u!114 &8783822943791099055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2288964795118921678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0831197917d1cc841860e33ab868e734, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _root: {fileID: 1979038863823802014}
+  _godMode: 0
+  _damageble: 1
+  _bullet: 0
+  _damage: 10
+  _explosionAnimation: {fileID: 7400000, guid: 495d123e58c0fbe4aa1053cd79f21af1, type: 2}
+  _explosionAnimationScale: 1
+  _renderer: {fileID: 8696101120889089955}
+  _currentHealths: 10
+  _maxHealths: 10
+  _hasShield: 0
+  _currentShield: 10
+  _maxShield: 10
+  _recoveringShield: 1
 --- !u!1 &2378722169470782979
 GameObject:
   m_ObjectHideFlags: 0
@@ -253,7 +282,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1089155006065625527}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: BulletPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
